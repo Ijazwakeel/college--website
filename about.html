@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>University Website Design - Ijaz Wakeel</title>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png" alt="">
+            </a>
+            <div class="nav-links" id="nav-links">
+                <svg xmlns="http://www.w3.org/2000/svg" onclick="closeMenu()" stroke="#fff"
+                    enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+                    style=" width: 10%;  height: 10%;">
+                    <path
+                        d="m12.71 12 8.15 8.15-.71.71L12 12.71l-8.15 8.15-.71-.71L11.29 12 3.15 3.85l.71-.71L12 11.29l8.15-8.15.71.71L12.71 12z">
+                    </path>
+                </svg>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" onclick="showMenu()" stroke="#ffffff" height="24"
+                viewBox="0 0 24 24" width="24" focusable="false" style="  width: 8%; height: 8%;">
+                <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path>
+            </svg>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!-- About-Us Content -->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the world's largest university</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Quisquam perspiciatis labore adipisci, maxime id dicta error quia 
+                 possimus illo exercitationem fugit, 
+                modi similique sequi, totam iste dignissimos. Veniam, ea corporis.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, molestias!
+                Lorem, ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <a href="" class="hero-btn red-btn">Explore Now</a>
+        </div>
+        <div class="about-col">
+            <img src="images/about.jpg" alt="">
+        </div>
+    </div>
+</section>
+    
+    <!-- Footer -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam ducimus exercitationem <br>
+        eum et nulla? Placeat sed voluptate atque quasi consequatur.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with             <i class="fa fa-heart-o"></i>
+            by Easy Tutorials </p>
+</section>
+
+    <script>
+
+        <!--------Toggle menu Javascript -------->
+        let navLinks = document.getElementById("nav-links");
+        function closeMenu() {
+            navLinks.style.right = "-200px"
+        }
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+    </script>
+</body>
+
+</html>

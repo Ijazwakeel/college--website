@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>University Website Design - Ijaz Wakeel</title>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png" alt="">
+            </a>
+            <div class="nav-links" id="nav-links">
+                <svg xmlns="http://www.w3.org/2000/svg" onclick="closeMenu()" stroke="#fff"
+                    enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+                    style=" width: 10%;  height: 10%;">
+                    <path
+                        d="m12.71 12 8.15 8.15-.71.71L12 12.71l-8.15 8.15-.71-.71L11.29 12 3.15 3.85l.71-.71L12 11.29l8.15-8.15.71.71L12.71 12z">
+                    </path>
+                </svg>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" onclick="showMenu()" stroke="#ffffff" height="24"
+                viewBox="0 0 24 24" width="24" focusable="false" style="  width: 8%; height: 8%;">
+                <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path>
+            </svg>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!-- Contact-Us Content -->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6545.419156649754!2d72.5998516!3d34.888638449999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dc3143ae99e223%3A0x980d0baabb4e9dcd!2sShangla%2C%20Khyber%20Pakhtunkhwa!5e0!3m2!1sen!2s!4v1709532171647!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <!-- convert facebook to home -->
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Banglore, Karnataka, IN</p>
+                    </span>
+
+                </div>
+                <div>
+                    <!-- convert facebook to phone -->
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+1 0123456789</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <!-- convert facebook to envelope-o -->
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>info@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+
+                    <input type="text" placeholder="Enter your name" name="name" required>
+                    <input type="email" placeholder="Enter email address" name="email" required>
+                    <input type="text" placeholder="Enter your subject" name="subject" required>
+                    <textarea name="" rows="8" placeholder="Message" name="message"></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam ducimus exercitationem <br>
+            eum et nulla? Placeat sed voluptate atque quasi consequatur.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i>
+            by Easy Tutorials </p>
+    </section>
+
+    <script>
+
+        <!--------Toggle menu Javascript -------->
+        let navLinks = document.getElementById("nav-links");
+        function closeMenu() {
+            navLinks.style.right = "-200px"
+        }
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+    </script>
+</body>
+
+</html>
